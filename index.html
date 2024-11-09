@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 231: Web Frontend Development I">
+    <meta name="author" content="Ronaldo Campos Lucas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/hamburger-icon.js"></script>
+    <title>Home Page</title>
 </head>
 <body>
-    
+    <header>
+        <img src="images/me.jpg" alt="A picture of me">
+        <h1>Ronaldo Campos Lucas</h1>
+        <button id="icon" onclick="displayNavigation()">
+            <a id="hamburger-symbol">☰</a>
+            <a id="x-symbol">X</a>
+        </button>
+    </header>
+    <nav id="nav">
+        <ul id="ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/ronaldoucl">Github Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/ronaldocamposlucas/">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="place">
+            <h2>San Jose, Costa Rica</h2>
+            <figure>
+                <img src="images/san-jose-costa-rica.jpg" alt="San Jose, Costa Rica">
+                <figcaption>The Costa Rica's capital</figcaption>
+            </figure>
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters">
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('cse')">CSE</button>
+                <button onclick="filterCourses('wdd')">WDD</button>
+            </div>
+            <div id="courses"></div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;<span id="currentyear"></span> Ronaldo Campos - Costa Rica</p>
+            <img src="images/Flag_of_Costa_Rica.jpg" alt="Costa Rica Flag">
+        </div>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
