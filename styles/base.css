@@ -60,6 +60,10 @@ nav ul li a {
     font-size: 24px;
 }
 
+nav ul li a:hover {
+    color: yellow;
+}
+
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -129,6 +133,11 @@ main {
     background-color: black;
     color: white;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.filters button:hover {
+    transform: scale(1.1);
 }
 
 #courses {
@@ -157,6 +166,16 @@ main {
     background-color: #edf1f2;
     border: 1px solid #b0b2b3;
     color: black;
+}
+
+#credits {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #6f2e1f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 /* FOOTER */

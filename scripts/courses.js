@@ -1,8 +1,18 @@
 document.addEventListener('DOMContentLoaded', getCourses);
 
 function getCourses() {
+    let credits = 0
     const container = document.getElementById('courses');
     displayCourses(courses);
+
+    courses.forEach(course => {
+        if(course.completed){
+            credits = credits + course.credits
+        }
+    })
+
+    const creditsDiv = document.getElementById('credits');
+    creditsDiv.innerHTML = "Credits: " + credits;
 }
 
 function displayCourses(arrayCourses){
