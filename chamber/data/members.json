@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Microsoft Costa Rica",
+        "address": "Forum II, Edificio B, Santa Ana, San José, Costa Rica",
+        "phone_number": "+506-2204-7400",
+        "website_url": "https://www.microsoft.com/es-cr",
+        "icon_file": "../images/companies/microsoft_logo.webp",
+        "membership_level": 3,
+        "industry": "Technology",
+        "established": 1975
+    },
+    {
+        "name": "Meta Costa Rica",
+        "address": "Zona Franca El Cafetal, Edificio 200, Heredia, Costa Rica",
+        "phone_number": "+506-2519-8888",
+        "website_url": "https://www.meta.com",
+        "icon_file": "../images/companies/facebook_logo.png",
+        "membership_level": 2,
+        "industry": "Social Media",
+        "established": 2004
+    },
+    {
+        "name": "Amazon Costa Rica",
+        "address": "Edificio Ultrapark 1, Lagunilla, Heredia, Costa Rica",
+        "phone_number": "+506-2562-9000",
+        "website_url": "https://www.amazon.jobs/en/locations/costa-rica",
+        "icon_file": "../images/companies/amazon_logo.png",
+        "membership_level": 3,
+        "industry": "E-commerce",
+        "established": 1994
+    },
+    {
+        "name": "Walmart Costa Rica",
+        "address": "Rotonda de Paso Ancho, San Sebastián, San José, Costa Rica",
+        "phone_number": "+506-2220-2222",
+        "website_url": "https://www.walmart.co.cr",
+        "icon_file": "../images/companies/walmart_logo.png",
+        "membership_level": 1,
+        "industry": "Retail",
+        "established": 1992
+    },
+    {
+        "name": "Intel Costa Rica",
+        "address": "Zona Franca America, Heredia, Costa Rica",
+        "phone_number": "+506-2204-2828",
+        "website_url": "https://www.intel.la/content/www/xl/es/homepage.html",
+        "icon_file": "../images/companies/intel_logo.webp",
+        "membership_level": 3,
+        "industry": "Semiconductors",
+        "established": 1968
+    },
+    {
+        "name": "Fair Play Labs",
+        "address": "Zapote, San José, Costa Rica",
+        "phone_number": "+506-2253-6000",
+        "website_url": "https://www.fairplaylabs.com",
+        "icon_file": "../images/companies/fairplaylabs_logo.png",
+        "membership_level": 2,
+        "industry": "Gaming",
+        "established": 2005
+    },
+    {
+        "name": "Google Costa Rica",
+        "address": "Zona Franca América, Edificio A, Heredia, Costa Rica",
+        "phone_number": "+506-2204-7200",
+        "website_url": "https://www.google.co.cr",
+        "icon_file": "../images/companies/google_logo.webp",
+        "membership_level": 3,
+        "industry": "Technology",
+        "established": 1998
+    }
+]
