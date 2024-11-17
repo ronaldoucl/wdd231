@@ -1,10 +1,184 @@
 :root {
+    --main-color: #1b4E70;
     --primary-color: #029FC6;
     --secondary-color: #020b2e;
     --background-color: #eefbfc;
     --accent-color: #7d0a01;
     --carlito-font: "Carlito", sans-serif;
     --amaranth-font: "Amaranth", sans-serif;
-    --green-button: #30c403;
+    --green-color: #30c403;
+    --yellow-color: #fffc53;
+    --white-color: #fff;
 }
 
+/* Header and Nav */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--main-color);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-family: var(--carlito-font), Helvetica, sans-serif;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-family: var(--amaranth-font), Helvetica, sans-serif;
+}
+
+header nav ul li {
+    padding: 0 25px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: var(--yellow-color);
+    text-decoration: underline;
+}
+
+/* Main */
+.container {
+    padding: 30px;
+    font-family: var(--carlito-font), Helvetica, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: transparent;
+    width: 30%;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--green-color);
+    border-radius: 3px;
+}
+
+#grid-directory {
+    display: grid;
+}
+
+#list-directory {
+    display: block;
+    margin: 0 40px;
+}
+
+#grid-directory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px; 
+    padding: 20px;
+    font-size: 20px;
+}
+
+#grid-directory .card {
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 0 10px;
+    background-color: var(--yellow-color);
+}
+
+#grid-directory .card img {
+    display: block;
+    height: 70px;
+    margin: 10px auto;
+}
+
+#grid-directory .card h3 {
+    display: none;
+}
+
+#list-directory .card {
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#list-directory .card h3 {
+    width: 15%;
+}
+
+#list-directory .card p {
+    width: 25%;
+}
+
+#list-directory .card p,
+#list-directory .card h3 {
+    font-size: 18px;
+    padding: 20px;
+}
+
+#list-directory .card img {
+    display: block;
+    width: 50px;
+    padding: 20px;
+}
+
+/*Footer */
+
+footer {
+    background-color: #1b4E70;
+    padding: 20px;
+    font-family: var(--carlito-font), Helvetica, sans-serif;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+footer div img {
+    width: 28px;
+    padding-left: 15px;
+}
+
+footer p {
+    font-size: 20px;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+#lastModified {
+    text-align: center;
+    color: var(--yellow-color);
+    margin: 0;
+}

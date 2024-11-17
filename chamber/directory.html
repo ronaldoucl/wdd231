@@ -19,13 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/general.js" defer></script>
+    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <title>Costa Rica Chamber of Commerce</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="logo">
             <img src="images/logo_chamber.png" alt="Costa Rica Chamber of Commerce">
             <span>Costa Rica Chamber of Commerce</span>
         </div>
@@ -39,12 +40,20 @@
         </nav>
     </header>
     <main>
-        <div class="buttons">
-            <button><i></i></button>
+        <div class="container">
+            <div class="buttons">
+                <button title="Grid view" class='btn active' id="gridViewBtn" onclick="toggleDirectory('grid')"><i class='fas fa-border-all'></i></button>
+                <button title="List view" class='btn' id="listViewBtn" onclick="toggleDirectory('list')"><i class='fas fa-list'></i></button>
+            </div>
+            <div id="grid-directory"></div>
+            <div id="list-directory"></div>
         </div>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span> Ronaldo Campos, Costa Rica</p>
+        <div>
+            <p>&copy;<span id="currentyear"></span> Ronaldo Campos - Costa Rica</p>
+            <img src="images/Flag_of_Costa_Rica.jpg" alt="Costa Rica Flag">
+        </div>
         <p id="lastModified"></p>
     </footer>
 </body>
