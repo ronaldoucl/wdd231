@@ -1,9 +1,10 @@
 let data = '';
+const COMPANIES_URL = 'data/members.json';
 
 document.addEventListener('DOMContentLoaded', () => {
     async function fetchMembers() {
         try {
-            const response = await fetch('data/members.json'); 
+            const response = await fetch(COMPANIES_URL); 
             data = await response.json();
             toggleDirectory('grid');
         } catch(error) {

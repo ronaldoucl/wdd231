@@ -2,6 +2,7 @@
     --main-color: #1b4E70;
     --primary-color: #029FC6;
     --secondary-color: #020b2e;
+    --light-blue: #cce5ff;
     --background-color: #eefbfc;
     --accent-color: #7d0a01;
     --carlito-font: "Carlito", sans-serif;
@@ -33,7 +34,7 @@ header {
     width: 100px;
 }
 
-.logo span {
+.logo h1 {
     font-size: 24px;
     font-family: var(--carlito-font), Helvetica, sans-serif;
     color: var(--white-color);
@@ -112,7 +113,7 @@ header nav ul li a:hover {
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 0 10px;
-    background-color: var(--yellow-color);
+    background-color: var(--light-blue);
 }
 
 #grid-directory .card img {
