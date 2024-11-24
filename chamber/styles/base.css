@@ -189,17 +189,14 @@ header nav ul li a:hover {
 }
 
 #events{
-    background-color: red;
     grid-column: 1/3;
 }
 
 #current-weather{
-    background-color: yellow;
     grid-column: 3/4;
 }
 
 #weather-forecast{
-    background-color: blueviolet;
     grid-column: 4/5;
 }
 
@@ -220,8 +217,12 @@ header nav ul li a:hover {
 #events div,
 #current-weather div,
 #weather-forecast div {
-    min-height: 100px;
+    height: 340px;
     background-color: var(--light-blue);
+    padding: 5px 20px;
+    color: black;
+    font-family: var(--carlito-font);
+    font-size: 20px;
 }
 
 /*Footer */
