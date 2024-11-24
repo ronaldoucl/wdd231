@@ -9,7 +9,7 @@
     <meta property="og:title" content="Chamber of Commerce" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./images/chamber_of_commerce.webp" />
-    <meta property="og:url" content="https://ronaldoucl.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:url" content="https://ronaldoucl.github.io/wdd231/chamber/index.html" />
     <link rel="icon" href="favicon.ico">
     <link
     href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -17,9 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/general.js" defer></script>
     <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+    <script src="scripts/general.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <title>Alajuela City Chamber of Commerce</title>
@@ -40,13 +39,32 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="buttons">
-                <button title="Grid view" class='btn active' id="gridViewBtn" onclick="toggleDirectory('grid')"><i class='fas fa-border-all'></i></button>
-                <button title="List view" class='btn' id="listViewBtn" onclick="toggleDirectory('list')"><i class='fas fa-list'></i></button>
-            </div>
-            <div id="grid-directory"></div>
-            <div id="list-directory"></div>
+        <section class="hero">
+            <img src="images/hero_image.jpg" alt="Alajuela City" id="hero" width="100%" height="250px">
+        </section>
+        <a href="#" class="call-to-action">
+            Join Alajuela Chamber of Commerce
+        </a>
+        <div class="home-container">
+            <section id="events">
+                <h2>Events</h2>
+                <div>
+
+                </div>
+            </section>
+            <section id="current-weather">
+                <h2>Current Weather</h2>
+                <div>
+
+                </div>
+            </section>
+            <section id="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div>
+                    
+                </div>
+            </section>
+            <section id="spotlights">sportlights</section>
         </div>
     </main>
     <footer>
@@ -56,5 +74,6 @@
         </div>
         <p id="lastModified"></p>
     </footer>
+    
 </body>
 </html>
