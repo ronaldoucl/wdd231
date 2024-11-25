@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     fetchMembers();
+
 });
 
 
@@ -52,5 +53,25 @@ function displayInformation(container) {
         });
     } else {
         console.error('Data is not available or is not an array.');
+    }
+}
+
+function displayThreeCompanies(){
+    if (data && Array.isArray(data)) {
+        const container = document.getElementById('spotlights');
+        let count = 0;
+        data.forEach(member => {
+            if (count >= 3) return;
+            container.innerHTML = `
+                <h3>${member.name}</h3>
+                <h4>${member.industry}</h4>
+                <img src="${member.icon_file}" alt="${member.name} Logo">
+                <div>
+                    <p><strong>PHONE: ${member.phone_number}</strong></p>
+                    <p><strong>URL: ${member.website_url}</strong></p>
+                </div>
+            `;
+            count++;
+        });
     }
 }

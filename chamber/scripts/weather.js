@@ -1,8 +1,10 @@
+const CURRENT_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?lat=10.01625&lon=-84.21163&appid=15b104b966811b5382e26cdf3d4d7be9";
+const WEATHER_FORECAST_URL = 'https://api.openweathermap.org/data/2.5/forecast?lat=10.01625&lon=-84.21163&appid=15b104b966811b5382e26cdf3d4d7be9';
+
 function getCurrentWeather() {
     const container = document.getElementById('current-weather');
     const div = document.createElement('div');
-    const url = "https://api.openweathermap.org/data/2.5/weather?lat=10.01625&lon=-84.21163&appid=15b104b966811b5382e26cdf3d4d7be9";
-  fetch(url)
+      fetch(CURRENT_WEATHER_URL)
     .then((response) => {
       if (!response.ok) {
         console.error(`Error: ${response.status}`);
@@ -34,10 +36,9 @@ function getCurrentWeather() {
 }
 
 function getWeatherForecast(){
-    const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=10.01625&lon=-84.21163&appid=15b104b966811b5382e26cdf3d4d7be9';
     const container = document.getElementById('weather-forecast');
     const div = document.createElement('div');
-    fetch(url)
+    fetch(WEATHER_FORECAST_URL)
     .then((response) => {
       if (!response.ok) {
         console.error(`Error: ${response.status}`);
