@@ -227,14 +227,13 @@ header nav ul li a:hover {
 /* Form */
 
 .main-join {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin: 20px 0;
-    padding: 10px;
-    font-family: var(--carlito-font);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+  padding: 10px;
+  font-family: var(--carlito-font);
 }
-
 
 form {
   width: 40%;
@@ -257,35 +256,81 @@ select {
 }
 
 #submit {
-    display: block;
-    background-color: rgb(218, 225, 245);
-    border-radius: 6px;
-    padding: 8px;
-    font-weight: bold;
-    border: 1px solid var(--primary-color);
-    width: 50%;
-    margin: 0 auto;
+  display: block;
+  background-color: rgb(218, 225, 245);
+  border-radius: 6px;
+  padding: 8px;
+  font-weight: bold;
+  border: 1px solid var(--primary-color);
+  width: 50%;
+  margin: 0 auto;
 }
 
 #membership-cards {
   display: block;
   width: 40%;
+  margin-left: 30px;
 }
 
 .card {
-    background-color: var(--light-blue);
-    border: 1px solid var(--primary-color);
-    padding: 25px;
-    margin-bottom: 25px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 5px;
-    font-weight: bold;
-    font-size: 20px;
+  background-color: var(--light-blue);
+  border: 1px solid var(--primary-color);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 }
 
+.card span,
+.card a {
+    display: block;
+}
 
+.card a {
+    text-decoration: none;
+    margin: 8px auto;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30%;
+    color: white;
+}
+
+.card:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  border: 3px solid var(--secondary-color);
+  background-color: rgb(238, 238, 250);
+}
+
+.modal-content {
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  font-family: var(--amaranth-font);
+  font-size: 26px;
+  
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
 
 /*Footer */
 

@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alajuela City Chamber of Commerce USA">
+    <meta name="description" content="Alajuela City Chamber of Commerce, form to join">
     <meta name="author" content="Ronaldo Campos Lucas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./hero_image.jpg">
+    <meta property="og:image" content="hero_image.jpg">
     <meta
       property="og:url"
       content="https://ronaldoucl.github.io/wdd231/chamber/index.html">
@@ -45,45 +45,45 @@
     </header>
     <main class="main-join">
       <form action="thankyou.html" method="get">
-        <h1>Membership Form</h1>
+        <h2>Membership Form</h2>
 
-        <label>
+        <label for="first_name">
           Applicant's First Name:
           <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
         </label>
 
-        <label>
+        <label for="last_name">
           Applicant's Last Name:
           <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
         </label>
 
-        <label>
+        <label for="organization_title">
           Organizational Title:
           <input type="text" name="organization_title" title="Enter your title (e.g., Manager)"
             autocomplete="organization-title" pattern="[a-zA-Z-\s]{7,}" required>
         </label>
 
-        <label>
+        <label for="email">
           Email Address:
           <input type="email" name="email" title="Enter your email address" autocomplete="email"
             required placeholder="e.g., example@domain.com">
         </label>
 
-        <label>
+        <label for="mobile">
           Mobile Phone Number:
           <input type="tel" name="mobile" title="Enter your mobile phone number" autocomplete="tel" required>
         </label>
 
-        <label>
+        <label for="organization">
           Business/Organization's Name:
           <input type="text" name="organization" title="Enter your business or organization's name"
             autocomplete="organization" required>
         </label>
 
-        <label>
+        <label for="membership_level">
           Membership Level:
           <select name="membership_level" title="Select a membership level" required>
-            <option value="" disabled selected></option>
+            <option value="" disabled selected>Select a membership level</option>
             <option value="NP">NP Membership</option>
             <option value="Bronze">Bronze Membership</option>
             <option value="Silver">Silver Membership</option>
@@ -156,7 +156,7 @@
     <footer>
       <div>
         <p>&copy;<span id="currentyear"></span> Ronaldo Campos - Costa Rica</p>
-        <img src="images/Flag_of_Costa_Rica.jpg" alt="Costa Rica Flag" />
+        <img src="images/Flag_of_Costa_Rica.jpg" alt="Costa Rica Flag">
       </div>
       <p id="lastModified"></p>
     </footer>
