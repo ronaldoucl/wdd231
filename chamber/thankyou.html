@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alajuela City Chamber of Commerce USA">
+    <meta name="author" content="Ronaldo Campos Lucas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/hero_image.jpg" />
+    <meta property="og:url" content="https://ronaldoucl.github.io/wdd231/chamber/index.html" />
+    <link rel="icon" href="favicon.ico">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+    <script src="scripts/general.js" defer></script>
+    <script src="scripts/weather.js"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>Alajuela City Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo_chamber.png" alt="Costa Rica Chamber of Commerce">
+            <h1>Alajuela City Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Thank You!</h1>
+        <p>We appreciate your submission. Here is your information:</p>
+        <ul>
+          <li>First Name: <span id="first_name"></span></li>
+          <li>Last Name: <span id="last_name"></span></li>
+          <li>Email: <span id="email"></span></li>
+          <li>Mobile: <span id="mobile"></span></li>
+          <li>Organization Name: <span id="organization"></span></li>
+          <li>Submitted At: <span id="timestamp"></span></li>
+        </ul>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;<span id="currentyear"></span> Ronaldo Campos - Costa Rica</p>
+            <img src="images/Flag_of_Costa_Rica.jpg" alt="Costa Rica Flag">
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
