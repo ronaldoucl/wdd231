@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Alajuela City Chamber of Commerce USA" />
-    <meta name="author" content="Ronaldo Campos Lucas" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Chamber of Commerce" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./images/hero_image.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alajuela City Chamber of Commerce USA">
+    <meta name="author" content="Ronaldo Campos Lucas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./hero_image.jpg">
     <meta
       property="og:url"
-      content="https://ronaldoucl.github.io/wdd231/chamber/index.html"
-    />
-    <link rel="icon" href="favicon.ico" />
+      content="https://ronaldoucl.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="favicon.ico">
     <link
       href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/e0a574ddb0.js"
-      crossorigin="anonymous"
-    ></script>
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
     <script src="scripts/general.js" defer></script>
     <script src="scripts/join.js"></script>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <title>Alajuela City Chamber of Commerce</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img
-          src="images/logo_chamber.png"
-          alt="Costa Rica Chamber of Commerce"
-        />
+        <img src="images/logo_chamber.png" alt="Costa Rica Chamber of Commerce">
         <h1>Alajuela City Chamber of Commerce</h1>
       </div>
       <nav>
@@ -58,79 +49,41 @@
 
         <label>
           Applicant's First Name:
-          <input
-            type="text"
-            name="first_name"
-            title="Enter your first name"
-            autocomplete="given-name"
-            required
-          />
+          <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
         </label>
 
         <label>
           Applicant's Last Name:
-          <input
-            type="text"
-            name="last_name"
-            title="Enter your last name"
-            autocomplete="family-name"
-            required
-          />
+          <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
         </label>
 
         <label>
           Organizational Title:
-          <input
-            type="text"
-            name="organization_title"
-            title="Enter your title (e.g., Manager)"
-            autocomplete="organization-title"
-            pattern="[a-zA-Z-\s]{7,}"
-            required
-          />
+          <input type="text" name="organization_title" title="Enter your title (e.g., Manager)"
+            autocomplete="organization-title" pattern="[a-zA-Z-\s]{7,}" required>
         </label>
 
         <label>
           Email Address:
-          <input
-            type="email"
-            name="email"
-            title="Enter your email address"
-            autocomplete="email"
-            required
-            placeholder="e.g., example@domain.com"
-          />
+          <input type="email" name="email" title="Enter your email address" autocomplete="email"
+            required placeholder="e.g., example@domain.com">
         </label>
 
         <label>
           Mobile Phone Number:
-          <input
-            type="tel"
-            name="mobile"
-            title="Enter your mobile phone number"
-            autocomplete="tel"
-            required
-          />
+          <input type="tel" name="mobile" title="Enter your mobile phone number" autocomplete="tel" required>
         </label>
 
         <label>
           Business/Organization's Name:
-          <input
-            type="text"
-            name="organization"
-            title="Enter your business or organization's name"
-            autocomplete="organization"
-            required
-          />
+          <input type="text" name="organization" title="Enter your business or organization's name"
+            autocomplete="organization" required>
         </label>
 
         <label>
           Membership Level:
-          <select
-            name="membership_level"
-            title="Select a membership level"
-            required
-          >
+          <select name="membership_level" title="Select a membership level" required>
+            <option value="" disabled selected></option>
             <option value="NP">NP Membership</option>
             <option value="Bronze">Bronze Membership</option>
             <option value="Silver">Silver Membership</option>
@@ -140,30 +93,31 @@
 
         <label>
           Organization Description:
-          <textarea
-            name="organization_description"
-            title="Describe your organization"
-          ></textarea>
+          <textarea name="organization_description" title="Describe your organization"></textarea>
         </label>
 
-        <input type="hidden" name="timestamp" id="timestamp" />
+        <input type="hidden" name="timestamp" id="timestamp">
 
-        <input type="submit" value="Submit" id="submit"/>
+        <input type="submit" value="Submit" id="submit">
       </form>
 
       <section id="membership-cards">
         <h2>Membership Levels</h2>
         <div class="card" data-modal="modal-np">
-          NP Membership <a href="#">More Info</a>
+            <span>NP Membership</span>
+            <a href="#">More Info</a>
         </div>
         <div class="card" data-modal="modal-bronze">
-          Bronze Membership <a href="#">More Info</a>
+          <span>Bronze Membership</span>
+          <a href="#">More Info</a>
         </div>
         <div class="card" data-modal="modal-silver">
-          Silver Membership <a href="#">More Info</a>
+          <span>Silver Membership</span>
+          <a href="#">More Info</a>
         </div>
         <div class="card" data-modal="modal-gold">
-          Gold Membership <a href="#">More Info</a>
+          <span>Gold Membership</span>
+          <a href="#">More Info</a>
         </div>
       </section>
     </main>
@@ -182,7 +136,7 @@
         <h2>Bronze Membership</h2>
         <p>Benefits: Discounts on events, spotlight ads, etc.</p>
       </div>
-    </d>
+    </dialog>
 
     <dialog id="modal-silver" class="modal">
       <div class="modal-content">
@@ -198,7 +152,7 @@
         <h2>Gold Membership</h2>
         <p>Benefits: Premium events, top-tier ads, training, etc.</p>
       </div>
-    </d>
+    </dialog>
     <footer>
       <div>
         <p>&copy;<span id="currentyear"></span> Ronaldo Campos - Costa Rica</p>
