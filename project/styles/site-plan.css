@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #181818;
+    --secundary-color: #fcfcfc;
+    --roboto-font: "Roboto", sans-serif;
+    --oswald-font: "Oswald", sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+section {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.color-schema {
+    background-color: gray;
+    border-radius: 3px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.primary-color {
+    color: #181818;
+}
+
+.secundary-color {
+    color: #fcff1c;
+}
+
+h2, .oswald {
+    font-family: var(--oswald-font);
+}
+
+p, li, span, .roboto {
+    font-family: var(--roboto-font);
+}
+
+ul {
+    list-style: none;
+}
