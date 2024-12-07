@@ -1,12 +1,18 @@
 :root {
     --primary-color: #181818;
-    --secundary-color: #fcfcfc;
+    --secundary-color: #eedf12;
     --roboto-font: "Roboto", sans-serif;
     --oswald-font: "Oswald", sans-serif;
 }
 
 body{
     text-align: center;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    font-family: var(--roboto-font);
+    color: white;
 }
 
 section {
@@ -14,6 +20,13 @@ section {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 50px;
+    border: 1px solid gray;
+    background-color: var(--secundary-color);
+    border-radius: 8px;
+}
+
+section img {
+    width: 50%;
 }
 
 .color-schema {
