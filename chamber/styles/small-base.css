@@ -1,5 +1,54 @@
 @media screen and (max-width: 801px) {
+    header {
+        display: block;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    #icon {
+        display: block;
+    }
+
+    #hamburger-symbol {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+        width: 100%;
+    }
+    
+    header nav ul {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header nav ul li {
+        padding: 0;
+        margin-bottom: 8px;
+    }
+
     #data-view {
         grid-template-columns: 1fr;
+        margin: 20px 30px;
+    }
+
+    .sidebar-section {
+        font-size: 18px;
+    }
+      
+    .sidebar-section h3 {
+        font-size: 30px;
+    }
+
+    #last-visit {
+        font-size: 30px;
     }
 }

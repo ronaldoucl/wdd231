@@ -28,7 +28,9 @@ function getCurrentWeather() {
         <p>Sunrise: ${sunrise}</p>
         <p>Sunset: ${sunset}</p>
       `;
-        container.appendChild(div);
+        if(container){
+          container.appendChild(div);
+        }
     })
     .catch((error) => {
       console.error(error.message);
@@ -58,7 +60,9 @@ function getWeatherForecast(){
         <p>${getDayName(1)}: <strong>${tomorrowTemp}° F</strong></p>
         <p>${getDayName(2)}: <strong>${dayAfterTomorrowTemp}° F</strong></p>
       `;
-      container.appendChild(div);
+      if(container){
+        container.appendChild(div);
+      }
     })
     .catch((error) => {
       console.error(error.message);

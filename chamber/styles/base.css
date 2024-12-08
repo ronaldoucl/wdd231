@@ -41,6 +41,22 @@ header {
   font-weight: 700;
 }
 
+#icon {
+  display: none;
+  position: absolute;
+  color: white;
+  font-family: var(--carlito-font);
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  top: 0%;
+  right: 0;
+}
+
+#nav {
+  display: flex;
+}
+
 header nav ul {
   display: flex;
   justify-content: space-between;
@@ -338,7 +354,6 @@ select {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "sidebar main";
   font-family: var(--carlito-font);
   text-align: center;
   margin: 30px 60px;
