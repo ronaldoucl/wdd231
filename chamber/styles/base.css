@@ -336,28 +336,56 @@ select {
 
 #data-view {
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "sidebar main";
-  gap: 16px;
-  margin: 20px;
   font-family: var(--carlito-font);
   text-align: center;
+  margin: 30px 60px;
+  gap: 30px;
+}
+
+#discovery-gallery {
+  font-family: var(--amaranth-font);
+  font-size: 20px;
+}
+
+#discovery-gallery figure {
+  display: block;
+  background-color: var(--light-blue);
+  margin: 0;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-radius: 6px;
+}
+
+#discovery-gallery figure img {
+  width: 70%;
+  padding: 20px;
+  border-radius: 6px;
 }
 
 .sidebar-section {
-  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 20px;
-  border: 1px solid blue;
   margin-bottom: 20px;
   font-size: 25px;
+  background-color: var(--yellow-color);
+  border: 7px;
+}
+
+.sidebar-section h3 {
+  font-size: 35px;
 }
 
 .sidebar-section:nth-of-type(4) {
   height: 10%;
+}
+
+#last-visit {
+  font-size: 50px;
+  font-weight: bold;
 }
 
 /*Footer */
