@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #181818;
+    --secondary-color: #fcff1c;
+    --background-color: #ececec;
+    --accent-color: #7d0a01;
+    --carlito-font: "Carlito", sans-serif;
+    --amaranth-font: "Amaranth", sans-serif;
+    --green-button: #30c403;
+}
+
+@media screen and (max-width: 1080px) {
+    header {
+        padding: 10px;
+    }
+
+    a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    /* Home Pages */
+    .services {
+        width: 90%;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .services-title {
+        padding: 15px;
+    }
+
+    .services-title > h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Product List */
+    .cart {
+        left: 50px;
+        top: 100px;
+    }
+
+    .main-product-list {
+        width: 100%;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    /* My Cart */
+
+    #my-products {
+        width: 550px;
+        margin: 0 auto;
+        margin-bottom: 200px;
+    }
+
+    .article {
+        font-size: 30px;
+    }
+
+    .article h3 {
+        margin: 10px;
+    }
+
+    .total-amount {
+        margin-top: 15px;
+        font-size: 45px;
+    }
+
+    .empty-message {
+        padding: 100px;
+        margin-bottom: 250px;
+    }
+
+    /* Contact Us */
+
+    .container {
+        width: 90%;
+        height: 600px;
+    }
+}

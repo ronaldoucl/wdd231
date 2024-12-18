@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Campos Library, an online commerce">
+    <meta name="author" content="Ronaldo Campos Lucas">
+    <meta property="og:title" content="The Campos Library">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://ronaldoucl.github.io/wdd231/project/home.html">
+    <link ref="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-medium.css">
+    <link rel="stylesheet" href="styles/main-small.css">
+    <script src="scripts/contact-us.js" defer></script>
+    <script src="scripts/general.js" defer></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="logo">
+            <h1 id="title">The Campos Library</h1>
+        </div>
+        <div id="icon">
+            <a id="hamburger-symbol">☰</a>
+            <a id="x-symbol">X</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="home.html" id="home">Home</a></li>
+                <li><a href="list-products.html" id="old">Product List</a></li>
+                <li><a href="my-cart.html" id="new">My Cart</a></li>
+                <li><a href="contact-us.html" id="new">Contact US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="contact-us">Contact Us</h1>
+        <form method="get" action="request-sent.html">
+            <fieldset id="first-name">
+                <input type="text" placeholder="First Name" required>
+            </fieldset>
+            <fieldset id="last-name">
+                <input type="text" placeholder="Last Name">
+            </fieldset>
+            <fieldset id="email">
+                <input type="email" placeholder="Email Address" required>
+            </fieldset>
+            <fieldset id="text-body">
+                <textarea placeholder="Text Body" required></textarea>
+            </fieldset>
+            <fieldset id="button-submit">
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Ronaldo Campos, Costa Rica</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

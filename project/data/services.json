@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Discounts",
+    "text": "We offer numerous discounts depending on the specific needs of the book market.",
+    "image": "icon-1.png"
+  },
+  {
+    "title": "Satisfaction Guarantee",
+    "text": "All our books come with a satisfaction guarantee.",
+    "image": "icon-2.png"
+  },
+  {
+    "title": "Home Delivery",
+    "text": "We offer deliveries throughout the country, with shipping from 24 to 48 hours.",
+    "image": "icon-3.png"
+  },
+  {
+    "title": "Reading Clubs",
+    "text": "We organize reading clubs and events to foster a community of readers.",
+    "image": "icon-4.png"
+  },
+  {
+    "title": "Book Pre-orders",
+    "text": "We allow pre-orders for books before their release to ensure you secure your copy.",
+    "image": "icon-5.png"
+  },
+  {
+    "title": "Quality Products",
+    "text": "Each book is reviewed before being placed on our website to ensure a quality product.",
+    "image": "icon-6.png"
+  },
+  {
+    "title": "24/7 Service",
+    "text": "We offer 24/7 customer service to address all your questions and needs.",
+    "image": "icon-7.png"
+  },
+  {
+    "title": "Qualified Staff",
+    "text": "All our staff are highly qualified to assist with any inquiries related to our products.",
+    "image": "icon-8.png"
+  },
+  {
+    "title": "Innovation",
+    "text": "We constantly seek the latest innovations in the publishing market to offer the best products.",
+    "image": "icon-9.png"
+  }
+]

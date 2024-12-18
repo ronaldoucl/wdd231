@@ -1,0 +1,111 @@
+@media screen and (max-width: 599px) {
+    .background-images {
+        display: none;
+    }
+
+    .small-background {
+        display: block;
+        width: 100%;
+    }
+
+    .small-background img {
+        width: 100%;
+    }
+
+
+
+    /* services */
+
+    .services {
+        width: 85%;
+        
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-title > h1 {
+        font-size: 25px;
+    }
+
+    header {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    ul {
+        display: block;
+        margin: 0 auto;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    a {
+        font-size: 30px;
+    }
+
+    #logo img {
+        width: 70px;
+    }
+
+    #icon {
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 15px;
+    }
+
+    #hamburger-symbol,
+    #x-symbol {
+        font-weight: bold;
+        font-size: 30px;
+        text-align: right;
+    }
+
+    #x-symbol {
+        display: none;
+    }
+
+    /* Product List */ 
+
+    .card {
+        width: 90%;
+    }
+
+    .cart {
+        display: none;
+    }
+
+    /* My Cart */
+    
+    #my-products {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .article {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .article h3 {
+        margin: 10px;
+    }
+
+    .article img {
+        margin: 10px;
+    }
+
+    .empty-message {
+        margin-bottom: 250px;
+    }
+
+}
