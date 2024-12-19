@@ -36,9 +36,25 @@ document.addEventListener("DOMContentLoaded", function() {
             box.innerHTML = `
                 <img src="images/${feature.image}" alt="${feature.title}">
                 <h3>${feature.title}</h3>
-                <p>${feature.text}</p>
+                <button class="info-btn">More Info</button>
+                <dialog class="info-dialog">
+                    <p>${feature.text}</p>
+                    <button class="close-dialog">Close</button>
+                </dialog>
             `;
             grid.appendChild(box);
+
+            const infoBtn = box.querySelector('.info-btn');
+            const dialog = box.querySelector('.info-dialog');
+            const closeBtn = box.querySelector('.close-dialog');
+
+            infoBtn.addEventListener('click', () => {
+                dialog.showModal(); 
+            });
+
+            closeBtn.addEventListener('click', () => {
+                dialog.close(); 
+            });
         });
     })
     .catch(error => console.error('Error loading the services:', error));
